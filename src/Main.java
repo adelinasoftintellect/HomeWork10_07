@@ -15,14 +15,12 @@ public class Main {
 		readFile("./files/text.txt");
 		String filePath1 = "./files/text1.txt";
 		String filePath2 = "./files/text2.txt";
-
 	}
 
 	private static void readFile(String path) {
 		try {
 
 			FileReader fileReader = new FileReader(path);
-
 			BufferedReader bufferedReader = new BufferedReader(fileReader);
 
 			while (bufferedReader.ready()) {
@@ -35,7 +33,6 @@ public class Main {
 				while ((line = bufferedReader.readLine()) != null) {
 					lineNum++;
 					if (lineNum % 2 != 0) {
-
 						writer1.write(line);
 						continue;
 					} else if (lineNum % 2 == 0) {
